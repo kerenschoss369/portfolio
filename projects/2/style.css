@@ -1,0 +1,155 @@
+/*
+    vh - viewport height
+    vw - viewport width
+    rem - root element
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+:root {
+    --main-color: rgb(94, 191, 248);
+    --main-font: Verdana;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main-header {
+    background-color: var(--main-color);
+    color: white;
+    padding-top: 10px;
+    font-family: var(--main-font);
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.main-title {
+    font-size: 2rem;
+}
+
+.game-decription {
+    font-size: 1.25rem;
+}
+
+.level-hint-safe-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: white;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 1rem;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+.level-hint-safe-btn:hover {
+    border: 1px solid white;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.emoji-btn {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.timer-lives-element {
+    font-size: 1rem;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-weight: bold;
+}
+
+.timer-container {
+    color: var(--main-color);
+    font-family: Verdana;
+}
+
+table tr,
+table td,
+table th {
+    border: 2px solid var(--main-color);
+    padding: 7px;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.board-container {
+    margin-bottom: 20px;
+}
+
+.board-container td {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.shown {
+    font-weight: bold;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.game-over-container {
+    justify-content: center;
+}
+
+.game-over-msg {
+    display: flex;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.play-again-btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--main-font);
+    font-size: 0.85rem;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+.play-again-btn:hover {
+    border: 1px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+
+
+/* HELPERS */
+
+.flex {
+    display: flex;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}

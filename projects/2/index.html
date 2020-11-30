@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="initGame()" oncontextmenu="return false;">
+    <header class="main-header">
+        <h1 class="main-title">Mine Sweeper</h1>
+        <!-- <h3 class="game-decription">Select Level:</h3> -->
+        <div class="buttons-container flex justify-center">
+            <button onclick="resetGame(4, 2)" class="level-hint-safe-btn easy align-center">Easy</button>
+            <button onclick="resetGame(8, 12)" class="level-hint-safe-btn medium align-center">Medium</button>
+            <button onclick="resetGame(12, 30)" class="level-hint-safe-btn hard align-center">Hard</button>
+        </div>
+    </header>
+    <div class="timer-container flex justify-center">
+        <!-- <h1 class="timer-title timer-element">Timer:</h1> -->
+        <h1 class="timer flex justify-center timer-lives-element"><time>00:00:00</time></h1>
+    </div>
+    <div class="lives-container flex justify-center">
+        <p class="timer-lives-element lives">3 lives left</p>
+    </div>
+    <div class="emoji-safe-click-container flex justify-center">
+        <img class="emoji-btn" onclick="resetGame()" src="images/happy.png" alt="" />
+        <button type="button" onclick="onClickSafeClick()" class="level-hint-safe-btn safe-click-btn">you have 3 more safe clicks</button>
+    </div>
+    <section class="game-over-container flex column align-center"></section>
+    <div class="buttons-container flex justify-center ">
+        <button onclick="onClickHint(1)" class="hint-btn level-hint-safe-btn align-center">💡</button>
+        <button onclick="onClickHint(2)" class="hint-btn level-hint-safe-btn align-center">💡</button>
+        <button onclick="onClickHint(3)" class="hint-btn level-hint-safe-btn align-center">💡</button>
+    </div>
+    <div class="board-container flex justify-center"></div>
+    <script src="js/helpers.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

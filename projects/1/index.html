@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Shop- Admin Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="onInit()">
+    <div class="logo-container">
+        <h1 class="logo">Books Shop</h1>
+    </div>
+    <div class="add-book-container flex column align-center justify-center">
+        <button type="button" class="btn add-book-btn" onclick="onToggleForm()">Add Book</button>
+        <form onsubmit="onAddBook(event)" class="add-book-form">
+            <input type="text" class="name-input" placeholder="Enter the book name" />
+            <input type="text" class="price-input" placeholder="Enter the book price" />
+            <button class="btn add-book-btn">Add Book</button>
+        </form>
+    </div>
+    <div class="screen" onclick="onCloseModal()"></div>
+    <div class="read-container">
+        <button type="button" class="close-modal-btn" onclick="onCloseModal()">❌</button>
+        <span class="book-info-container flex align-center column">
+        <span class="book-image-container"><img class="book-image" src="" alt="photo here"/></span>
+        <span class="book-name"></span>
+        <span class="book-price">₪</span>
+        </span>
+        <span class="rate-container flex justify-center">
+        <button type="button" class="rate-btn-plus">+</button>
+        <p class="book-rate"></p>
+        <button type="button" class="rate-btn-minus">-</button>
+        </span>
+    </div>
+    <div class="books-container flex justify-center"></div>
+    <h3 class="no-books"></h3>
+
+    <script src="js/util.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/books-service.js"></script>
+    <script src="js/books-controller.js"></script>
+</body>
+
+</html>

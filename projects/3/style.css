@@ -1,0 +1,121 @@
+/*
+    vh - viewport height
+    vw - viewport width
+    rem - root element
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-color: rgb(202, 149, 103);
+    --main-font: Verdana;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main-header {
+    background-color: var(--main-color);
+    color: white;
+    padding-top: 30px;
+    font-family: var(--main-font);
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-title {
+    font-size: 3.125rem;
+}
+
+.game-decription {
+    font-size: 1.25rem;
+}
+
+.level-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: white;
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 18px;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+.level-btn:hover {
+    border: 1px solid white;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.one-edge-shadow {
+    padding-bottom: 30px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.timer-element {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.timer-container {
+    color: var(--main-color);
+    font-family: Verdana;
+}
+
+table tr,
+table td,
+table th {
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+.table-container td {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.clicked {
+    font-weight: bold;
+    color: white;
+    background-color: var(--main-color);
+}
+
+.game-over-container {
+    justify-content: center;
+}
+
+
+/* HELPERS */
+
+.flex {
+    display: flex;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}

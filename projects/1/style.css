@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial";
+    margin: 0;
+}
+
+button {
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.cell-sort {
+    cursor: pointer;
+}
+
+.screen {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    display: none;
+}
+
+.logo-container {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.logo {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(13, 118, 204);
+    font-size: 2.5rem;
+}
+
+.read-container {
+    background: white;
+    width: 50vw;
+    height: 300px;
+    position: absolute;
+    z-index: 1000;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: -4px 0px 15px 5px rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.book-image {
+    width: 100px;
+}
+
+.add-book-container {
+    padding: 10px;
+}
+
+.add-book-btn {
+    margin-bottom: 10px;
+    background-color: rgb(13, 118, 204);
+    color: white;
+}
+
+.add-book-btn:hover {
+    padding: 6px 20px;
+    background-color: rgb(11, 95, 165);
+}
+
+.add-book-form {
+    display: none;
+}
+
+.add-book-form input {
+    padding: 5px;
+}
+
+.books-table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.read-btn {
+    background-color: rgb(113, 170, 20);
+    color: white;
+}
+
+.read-btn:hover {
+    background-color: rgb(97, 146, 19);
+}
+
+.update-btn {
+    background-color: rgb(226, 110, 32);
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: rgb(209, 125, 14);
+}
+
+.remove-btn {
+    background-color: rgb(185, 16, 16);
+    color: white;
+}
+
+.remove-btn:hover {
+    background-color: rgb(146, 14, 14);
+}
+
+.books-table td {
+    border: 1px solid #cecece;
+    padding: 10px;
+}
+
+.books-table thead tr {
+    background: #cecece;
+    font-weight: bold;
+}
+
+.books-table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.update-book-form {
+    display: none;
+}
+
+
+/* HELPERS */
+
+.btn {
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-weight: bold;
+    transition: .3s;
+    border: none;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.justify-center {
+    justify-content: center;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
